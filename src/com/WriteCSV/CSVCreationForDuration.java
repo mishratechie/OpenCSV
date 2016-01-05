@@ -15,20 +15,19 @@ public class CSVCreationForDuration {
 	public static void main(String[] args) throws IOException {
 		
 		
-		String Prjname="C:\\Users\\asmishra\\Documents\\NeoLoad Projects\\RollbaseMobileBasicTest_V10\\RollbaseMobileBasicTest_V10.nlp";
-		String itrName="MainInt_SimpleApp_Scenario_Iteration1";
+		String Prjname="C:\\Users\\ashutosh\\project.nlp";
+		String itrName="SimpleApp_Scenario_Iteration1";
+		
+		//Time logic is for neload tool
 		int HourstoRun=24;
 		int ExpSceTimeMinutes=5;
 		int NumofItePerHour=(60/ExpSceTimeMinutes);
+		
 		int TotalnumOfitr = (HourstoRun *NumofItePerHour);
 		System.out.println("TotalnumOfitr   "+TotalnumOfitr);
+				
 		
-		
-		
-		
-		
-		
-		String csv = "C:/output.csv";
+		String csv = "output.csv";
 		CSVCreationForDuration createCSV=new CSVCreationForDuration();
 		createCSV.generateCSV(csv,Prjname,itrName,TotalnumOfitr);
 		

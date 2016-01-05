@@ -10,13 +10,7 @@ public class WriteCSV {
 
 	public static void main(String[] args) throws IOException {
 		
-		
-		
-		
-		
-		
-		
-		String csv = "C:\\output.csv";
+		String csv = "output.csv";
 		WriteCSV writeCSV=new WriteCSV();
 		writeCSV.generateCSV(csv);
 		
